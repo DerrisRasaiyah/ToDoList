@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+    background: rgba(0,0,0,0.1);
+}
+
+.container {
+    padding: 10px;
+    margin: 0 auto;
+    width: 480px;
+}
+
+.header {
+    background-image: url(../img/Banner.jpg);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    width: 480px;
+    max-width: 480px;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+}
+
+.clear {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.clear i {
+    color: #7A7AFF;
+    font-size: 30px;
+}
+
+.clear i:hover {
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+
+#date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #7A7AFF;
+    font-size: 24px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.content {
+    width: 480px;
+    max-height: 350px;
+    height: 350px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+
+.content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 480px;
+    height: 45px;
+    max-height: 45px;
+}
+
+.item i[job="complete"] {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.item i[job="complete"]:hover {
+    cursor: pointer;
+}
+
+.fa-check-circle{
+    color:#6eb200;
+}
+
+.item p.text {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    background-color: #FFF;
+    max-width: 285px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color : #ccc;
+}
+
+.item i[job="delete"] {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+}
+
+.item i[job="delete"]:hover {
+    cursor: pointer;
+    color:#af0000;
+}
+
+.add-to-do {
+    position: relative;
+    width: 460px;
+    height: 40px;
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.add-to-do i{
+    position: absolute;
+    font-size: 40px;
+    color: #4162f6;
+}
+
+.add-to-do input {
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
